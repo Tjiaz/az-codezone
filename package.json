@@ -1,5 +1,5 @@
 {
-  "name": "lamaproject",
+  "name": "azcodezone",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,10 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.1",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
-    "next": "13.4.4",
+    "jquery": "^3.7.0",
+    "mongoose": "^6.11.1",
+    "next": "^13.4.7",
+    "next-auth": "^4.22.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "swr": "^2.1.5"
   }
 }

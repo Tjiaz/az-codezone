@@ -1,0 +1,23 @@
+.container {
+  padding: 15px;
+  cursor: pointer;
+  background-color: #A0CB8E;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+  padding: 9px;
+  cursor: pointer;
+  background-color: #A0CB8E;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+  color: white;
+}
+
+}

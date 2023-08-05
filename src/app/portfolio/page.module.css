@@ -1,0 +1,86 @@
+.mainTitle {
+  font-size: 100px;
+  color: #a0cb8e;
+}
+
+.container {
+}
+
+.selectTitle {
+  margin: 20px 0px;
+}
+
+.items {
+  display: flex;
+  gap: 50px;
+}
+
+.item {
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  background-size: cover !important;
+}
+
+.item:nth-child(1) {
+  background: url("/datasci.avif");
+}
+.item:nth-child(2) {
+  background: url("/websites.jpg");
+}
+.item:nth-child(3) {
+  background: url("/appli.avif");
+}
+
+.title {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.item:hover .title {
+  color: #a0cb8e;
+}
+
+@media (max-width: 768px) {
+  .container {
+   
+}
+  
+  .mainTitle {
+    font-size: 50px;
+    color: #a0cb8e;
+  }
+
+  .items {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .item {
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  background-size: cover !important;
+}
+.title {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.selectTitle {
+  margin: 20px 0px;
+  font-size: 25px;
+}
+
+}
