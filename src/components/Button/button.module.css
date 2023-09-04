@@ -1,23 +1,25 @@
 .container {
   padding: 15px;
   cursor: pointer;
-  background-color: #A0CB8E;
+  background-color: #a0cb8e;
   border: none;
   border-radius: 5px;
   width: max-content;
   color: white;
 }
-
+.container:hover {
+  background-color: #7c9975;
+  color: #000;
+}
 
 @media (max-width: 768px) {
   .container {
-  padding: 9px;
-  cursor: pointer;
-  background-color: #A0CB8E;
-  border: none;
-  border-radius: 5px;
-  width: max-content;
-  color: white;
-}
-
+    padding: 9px;
+    cursor: pointer;
+    background-color: #a0cb8e;
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+    color: white;
+  }
 }

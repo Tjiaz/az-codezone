@@ -6,8 +6,7 @@ import styles from "./navbar.module.css";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 
 const links = [
   {
@@ -52,42 +51,44 @@ const Navbar = () => {
 
   const handleLinkClick = () => {
     setIsOpen(false);
-    
   };
 
   return (
-    <div className={styles.container}>
-      <Link href="/" className={styles.logo}>
-        <Image src="/bitmap.png" alt="logo" width={50} height={60} />
-      </Link>
-      <div
-        className={`${styles["navbar-toggle"]} ${isOpen ? styles.open : ""}`}
-        onClick={toggleNavbar}
-      >
-        <div className={styles.bar} />
-        <div className={styles.bar} />
-        <div className={styles.bar} />
-      </div>
+    <nav>
+      <div className={styles.container}>
+        <Link href="/" className={styles.logo}>
+          <Image src="/bitmap.png" alt="logo" width={50} height={60} />
+        </Link>
 
-      <div className={`${styles.links} ${isOpen ? styles.open : ""}`}>
-        <DarkModeToggle />
-        {links.map((link) => (
-          <Link
-            key={link.id}
-            href={link.url}
-            className={`${styles.link} ${styles.hoverLink}`}
-            onClick={handleLinkClick}
-          >
-            {link.title}
-          </Link>
-        ))}
-        {session.status === "authenticated" && (
-          <button className={styles.logout} onClick={signOut}>
-            Logout
-          </button>
-        )}
+        <div
+          className={`${styles["navbar-toggle"]} ${isOpen ? styles.open : ""}`}
+          onClick={toggleNavbar}
+        >
+          <div className={styles.bar} />
+          <div className={styles.bar} />
+          <div className={styles.bar} />
+        </div>
+
+        <div className={`${styles.links} ${isOpen ? styles.open : ""}`}>
+          <DarkModeToggle />
+          {links.map((link) => (
+            <Link
+              key={link.id}
+              href={link.url}
+              className={`${styles.link} ${styles.hoverLink}`}
+              onClick={handleLinkClick}
+            >
+              {link.title}
+            </Link>
+          ))}
+          {session.status === "authenticated" && (
+            <button className={styles.logout} onClick={signOut}>
+              Logout
+            </button>
+          )}
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
