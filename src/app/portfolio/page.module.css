@@ -1,9 +1,9 @@
 .mainTitle {
   font-size: 100px;
+  color: #a0cb8e;
 }
 
-.container {
-}
+
 
 .selectTitle {
   margin: 20px 0px;
@@ -15,7 +15,7 @@
 }
 
 .item {
-  border: 5px solid #bbb;
+  border: 5px solid #ffffff;
   border-radius: 5px;
   width: 300px;
   height: 400px;
@@ -24,13 +24,13 @@
 }
 
 .item:nth-child(1) {
-  background: url("/illustration.png");
+  background: url("/datasci.avif");
 }
 .item:nth-child(2) {
   background: url("/websites.jpg");
 }
 .item:nth-child(3) {
-  background: url("/apps.jpg");
+  background: url("/appli.avif");
 }
 
 .title {
@@ -42,5 +42,44 @@
 }
 
 .item:hover .title {
-  color: #53c28b;
+  color: #cef2be;
+}
+
+@media (max-width: 768px) {
+  .container {
+   
+}
+  
+  .mainTitle {
+    font-size: 50px;
+    color: #a0cb8e;
+  }
+
+  .items {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .item {
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  background-size: cover !important;
+}
+.title {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.selectTitle {
+  margin: 20px 0px;
+  font-size: 25px;
+}
+
 }

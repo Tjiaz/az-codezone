@@ -56,3 +56,26 @@
   color: #eee;
   font-weight: bold;
 }
+
+
+@media (max-width: 768px) {
+
+.container {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+
+.input,
+.textArea {
+  padding: 7px;
+  background-color: transparent;
+  border: 2px solid #bbb;
+  border-radius: 3px;
+  color: #bbb;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+}

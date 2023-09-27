@@ -16,7 +16,7 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: #53c28b;
+  background-color: #A0CB8E;
   padding: 5px;
   color: white;
 }
@@ -24,6 +24,7 @@
 .textContainer {
   display: flex;
   gap: 100px;
+ 
 }
 
 .item {
@@ -35,7 +36,19 @@
 }
 
 .desc {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 300;
   text-align: justify;
 }
+
+
+@media (max-width: 768px) {
+
+.textContainer {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+ 
+
+
+}}

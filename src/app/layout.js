@@ -1,21 +1,24 @@
-import Navbar from "@/components/navbar/Navbar";
 import "./globals.css";
-import { Inter, Roboto, Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
+import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
 import AuthProvider from "@/components/AuthProvider/AuthProvider";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Lama Dev",
-  description: "This is the description",
+  title: "Az-codezone",
+  description: "Creating and Solving IT Problems",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <ThemeProvider>
           <AuthProvider>
             <div className="container">
