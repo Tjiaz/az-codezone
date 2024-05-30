@@ -3,9 +3,10 @@ import styles from "./footer.module.css";
 import Image from "next/image";
 
 const Footer = () => {
+  const date = new Date().getFullYear()
   return (
     <div className={styles.container}>
-      <div>©2023 Az-codezone. All rights reserved.</div>
+      <div>©{date} Az-codezone. All rights reserved.</div>
       <div className={styles.social}>
         <Image
           src="/1.png"
